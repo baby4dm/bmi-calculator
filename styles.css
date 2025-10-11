@@ -1,0 +1,27 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --grey-500: #5e6e85;
+  --grey-300: #acc1de;
+  --blue-900: #253347;
+  --blue-500: #345ff6;
+  --blue-300: #b3d3f1;
+  --blue-100: #e1e7fe;
+  --gradient-start: #d6fcfe;
+  --gradient-end: #d6e6fe;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--white);
+  background-image: radial-gradient(
+    ellipse 100% 70% at 50% 0%,
+    var(--gradient-end) 0%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
