@@ -41,22 +41,137 @@
         <section class="input-section">
           <label for="height">Height</label>
           <div class="input-box">
-            <input type="number" id="height" placeholder="0" />
+            <input type="text" name="height" id="height" placeholder="0" />
             <span class="unit">cm</span>
           </div>
+          <label for="weight">Weight</label>
+          <div class="input-box">
+            <input type="text" name="weight" id="weight" placeholder="0" />
+            <span class="unit">kg</span>
+          </div>
+        </section>
+        <section class="result-section">
+          <h2>Welcome!</h2>
+          <p>
+            Enter your height and weight and you’ll see your BMI result here
+          </p>
         </section>
       </section>
     </section>
-    <section class="description-section"></section>
-    <section class="advice-section"></section>
-    <section class="limitations-section"></section>
-    Body Mass Index Calculator Better understand your weight in relation to your
-    height using our body mass index (BM) calculator. While BMI is not the sole
-    determinant of a healthy weight, it offers a valuable starting point to
-    evaluate your overall health and well-being. Enter your details below Metric
-    Imperial Height Weight Your BMI is...
-
-    <!-- add score -->
+    <section class="description-section">
+      <img
+        class="description-image"
+        src="./images/image-man-eating.webp"
+        alt="men-eating"
+      />
+      <section class="text-content">
+        <h2 class="title">What your BMI result means</h2>
+        <p class="content">
+          A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'
+          Maintaining a healthy weight may lower your chances of experiencing
+          health issues later on, such as obesity and type 2 diabetes. Aim for a
+          nutritious diet with reduced fat and sugar content, incorporating
+          ample fruits and vegetables. Additionally, strive for regular physical
+          activity, ideally about 30 minutes daily for five days a week.
+        </p>
+      </section>
+    </section>
+    <section class="advice-section">
+      <section class="advice-container">
+        <img class="advice-img" src="./images/icon-eating.svg" alt="eating" />
+        <h2 class="title">Healthy eating</h2>
+        <p class="content">
+          Healthy eating promotes weight control, disease prevention, better
+          digestion, immunity, mental clarity, and mood.
+        </p>
+      </section>
+      <section class="advice-container">
+        <img
+          class="advice-img"
+          src="./images/icon-exercise.svg"
+          alt="exercise"
+        />
+        <h2 class="title">Regular exercise</h2>
+        <p class="content">
+          Exercise improves fitness, aids weight control, elevates mood, and
+          reduces disease risk, fostering wellness and longevity.
+        </p>
+      </section>
+      <section class="advice-container">
+        <img class="advice-img" src="./images/icon-sleep.svg" alt="sleep" />
+        <h2 class="title">Adequate sleep</h2>
+        <p class="content">
+          Sleep enhances mental clarity, emotional stability, and physical
+          wellness, promoting overall restoration and rejuvenation.
+        </p>
+      </section>
+    </section>
+    <section class="limitations-section">
+      <section class="text-content">
+        <h2>Limitations of BMI</h2>
+        <p class="content">
+          Although BMI is often a practical indicator of healthy weight, it is
+          not suited for every person. Specific groups should carefully consider
+          their BMI outcomes, and in certain cases, the measurement may not be
+          beneficial to use.
+        </p>
+      </section>
+      <section class="cards">
+        <section class="card">
+          <section class="header">
+            <img src="./images/icon-gender.svg" alt="gender" />
+            <h3 class="title">Gender</h3>
+          </section>
+          <p class="content">
+            The development and body fat composition of girls and boys vary with
+            age. Consequently, a child's age and gender are considered when
+            evaluating their BMI.
+          </p>
+        </section>
+        <section class="card">
+          <section class="header">
+            <img src="./images/icon-age.svg" alt="age" />
+            <h3 class="title">Age</h3>
+          </section>
+          <p class="content">
+            In aging individuals, increased body fat and muscle loss may cause
+            BMI to underestimate body fat content.
+          </p>
+        </section>
+        <section class="card">
+          <section class="header">
+            <img src="./images/icon-muscle.svg" alt="muscle" />
+            <h3 class="title">Muscle</h3>
+          </section>
+          <p class="content">
+            BMI may misclassify muscular individuals as overweight or obese, as
+            it doesn't differentiate muscle from fat.
+          </p>
+        </section>
+        <section class="card">
+          <section class="header">
+            <img src="./images/icon-pregnancy.svg" alt="pregnancy" />
+            <h3 class="title">Pregnancy</h3>
+          </section>
+          <p class="content">
+            Expectant mothers experience weight gain due to their growing baby.
+            Maintaining a healthy pre-pregnancy BMI is advisable to minimise
+            health risks for both mother and child.
+          </p>
+        </section>
+        <section class="card">
+          <section class="header">
+            <img src="./images/icon-race.svg" alt="race" />
+            <h3 class="title">Race</h3>
+          </section>
+          <p class="content">
+            Certain health concerns may affect individuals of some Black and
+            Asian origins at lower BMIs than others. To learn more, it is
+            advised to discuss this with your GP or practice nurse.
+          </p>
+        </section>
+      </section>
+    </section>
 
     Your BMI suggests you're
     <!-- add classification -->. Your ideal weight is between
