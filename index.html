@@ -21,44 +21,57 @@
     <title>Frontend Mentor | Body Mass Index Calculator</title>
   </head>
   <body>
+    <div class="background"></div>
     <header>
       <img class="logo" src="./images/logo.svg" alt="logo" />
     </header>
     <section class="top-section">
       <section class="text-content">
         <h1>Body Mass Index Calculator</h1>
-        <p class="description">
+        <p class="content">
           Better understand your weight in relation to your height using our
           body mass index (BM) calculator. While BMI is not the sole determinant
           of a healthy weight, it offers a valuable starting point to evaluate
           your overall health and well-being.
         </p>
       </section>
-      <section class="calculator-section">
-        <h2>Enter your details below</h2>
+      <section class="calculator">
+        <h3>Enter your details below</h3>
         <section class="radio-container">
-          <label>
-            <input type="radio" name="metrics" value="metric" /> Metric
-          </label>
-          <label
-            ><input type="radio" name="metrics" value="imperial" />
-            Imperial</label
-          >
+          <div class="radio-option">
+            <input
+              type="radio"
+              id="metric"
+              name="metrics"
+              value="metric"
+              checked
+            />
+            <label for="metric" class="radio-label">Metric</label>
+          </div>
+
+          <div class="radio-option">
+            <input type="radio" id="imperial" name="metrics" value="imperial" />
+            <label for="imperial" class="radio-label">Imperial</label>
+          </div>
         </section>
-        <section class="input-section">
-          <label for="height">Height</label>
-          <div class="input-box">
-            <input type="text" name="height" id="height" placeholder="0" />
-            <span class="unit">cm</span>
-          </div>
-          <label for="weight">Weight</label>
-          <div class="input-box">
-            <input type="text" name="weight" id="weight" placeholder="0" />
-            <span class="unit">kg</span>
-          </div>
+        <section class="input-container">
+          <section class="form-group">
+            <label for="height">Height</label>
+            <div class="input-box">
+              <input type="text" name="height" id="height" placeholder="0" />
+              <span class="unit">cm</span>
+            </div>
+          </section>
+          <section class="form-group">
+            <label for="weight">Weight</label>
+            <div class="input-box">
+              <input type="text" name="weight" id="weight" placeholder="0" />
+              <span class="unit">kg</span>
+            </div>
+          </section>
         </section>
         <section class="result-section">
-          <h2>Welcome!</h2>
+          <h3>Welcome!</h3>
           <p>
             Enter your height and weight and you’ll see your BMI result here
           </p>
@@ -86,11 +99,13 @@
     <section class="advice-section">
       <section class="advice-container">
         <img class="advice-img" src="./images/icon-eating.svg" alt="eating" />
-        <h2 class="title">Healthy eating</h2>
-        <p class="content">
-          Healthy eating promotes weight control, disease prevention, better
-          digestion, immunity, mental clarity, and mood.
-        </p>
+        <section class="text-content">
+          <h3 class="title">Healthy eating</h3>
+          <p class="content">
+            Healthy eating promotes weight control, disease prevention, better
+            digestion, immunity, mental clarity, and mood.
+          </p>
+        </section>
       </section>
       <section class="advice-container">
         <img
@@ -98,19 +113,23 @@
           src="./images/icon-exercise.svg"
           alt="exercise"
         />
-        <h2 class="title">Regular exercise</h2>
-        <p class="content">
-          Exercise improves fitness, aids weight control, elevates mood, and
-          reduces disease risk, fostering wellness and longevity.
-        </p>
+        <section class="text-content">
+          <h3 class="title">Regular exercise</h3>
+          <p class="content">
+            Exercise improves fitness, aids weight control, elevates mood, and
+            reduces disease risk, fostering wellness and longevity.
+          </p>
+        </section>
       </section>
       <section class="advice-container">
         <img class="advice-img" src="./images/icon-sleep.svg" alt="sleep" />
-        <h2 class="title">Adequate sleep</h2>
-        <p class="content">
-          Sleep enhances mental clarity, emotional stability, and physical
-          wellness, promoting overall restoration and rejuvenation.
-        </p>
+        <section class="text-content">
+          <h3 class="title">Adequate sleep</h3>
+          <p class="content">
+            Sleep enhances mental clarity, emotional stability, and physical
+            wellness, promoting overall restoration and rejuvenation.
+          </p>
+        </section>
       </section>
     </section>
     <section class="limitations-section">
@@ -127,7 +146,7 @@
         <section class="card">
           <section class="header">
             <img src="./images/icon-gender.svg" alt="gender" />
-            <h3 class="title">Gender</h3>
+            <h4 class="title">Gender</h4>
           </section>
           <p class="content">
             The development and body fat composition of girls and boys vary with
@@ -138,7 +157,7 @@
         <section class="card">
           <section class="header">
             <img src="./images/icon-age.svg" alt="age" />
-            <h3 class="title">Age</h3>
+            <h4 class="title">Age</h4>
           </section>
           <p class="content">
             In aging individuals, increased body fat and muscle loss may cause
@@ -148,7 +167,7 @@
         <section class="card">
           <section class="header">
             <img src="./images/icon-muscle.svg" alt="muscle" />
-            <h3 class="title">Muscle</h3>
+            <h4 class="title">Muscle</h4>
           </section>
           <p class="content">
             BMI may misclassify muscular individuals as overweight or obese, as
@@ -158,7 +177,7 @@
         <section class="card">
           <section class="header">
             <img src="./images/icon-pregnancy.svg" alt="pregnancy" />
-            <h3 class="title">Pregnancy</h3>
+            <h4 class="title">Pregnancy</h4>
           </section>
           <p class="content">
             Expectant mothers experience weight gain due to their growing baby.
@@ -169,7 +188,7 @@
         <section class="card">
           <section class="header">
             <img src="./images/icon-race.svg" alt="race" />
-            <h3 class="title">Race</h3>
+            <h4 class="title">Race</h4>
           </section>
           <p class="content">
             Certain health concerns may affect individuals of some Black and
@@ -180,12 +199,10 @@
       </section>
     </section>
 
-    Your BMI suggests you're
-    <!-- add classification -->. Your ideal weight is between
-    <!-- add range -->. What your BMI result means A BMI range of 18.5 to 24.9
-    is considered a 'healthy weight.' Maintaining a healthy weight may lower
-    your chances of experiencing health issues later on, such as obesity and
-    type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar
+    <!-- Your ideal weight is between. What your BMI result means A BMI range of 18.5
+    to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may
+    lower your chances of experiencing health issues later on, such as obesity
+    and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar
     content, incorporating ample fruits and vegetables. Additionally, strive for
     regular physical activity, ideally about 30 minutes daily for five days a
     week. Healthy eating Healthy eating promotes weight control, disease
@@ -207,6 +224,6 @@
     health risks for both mother and child. Race Certain health concerns may
     affect individuals of some Black and Asian origins at lower BMIs than
     others. To learn more, it is advised to discuss this with your GP or
-    practice nurse.
+    practice nurse. -->
   </body>
 </html>
