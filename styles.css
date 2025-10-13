@@ -80,6 +80,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  width: 100%;
 }
 h3 {
   font-size: 20px;
@@ -212,11 +213,12 @@ h3 {
   padding-inline: 24px;
 }
 .advice-section {
-  margin-block: 48px;
+  padding-block: 48px;
   display: flex;
   flex-direction: column;
   gap: 40px;
   padding-inline: 24px;
+  background: linear-gradient(to right, var(--white), rgba(245, 249, 254));
 }
 .advice-container {
   display: flex;
@@ -242,6 +244,8 @@ h3 {
 .limitations-section .text-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 32px;
 }
 .cards {
@@ -255,7 +259,8 @@ h3 {
   gap: 16px;
   padding: 24px;
   border-radius: 16px;
-  box-shadow: 16px 0px 56px 0px rgba(143, 174, 207, 0.25);
+  box-shadow: 8px 16px 16px 8px rgba(143, 174, 207, 0.15);
+  overflow: visible;
 }
 .card .header {
   display: flex;
@@ -271,4 +276,126 @@ h4 {
   line-height: 1.5;
   font-weight: 600;
   color: var(--blue-900);
+}
+@media (min-width: 768px) {
+  .top-section {
+    padding-inline: 39px;
+  }
+  .calculator {
+    padding: 32px;
+    gap: 32px;
+  }
+  .radio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .form-group {
+    width: 100%;
+  }
+  .result-section {
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+  }
+  .description-section {
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+    padding-right: 39px;
+    overflow: hidden;
+    align-items: center;
+    width: 100%;
+  }
+  .description-image {
+    height: 100%;
+    width: 435px;
+    margin-left: clamp(-80px, 10vw, -60px);
+  }
+  .description-section .text-content {
+    padding: 0;
+  }
+  .advice-section {
+    padding-inline: 39px;
+  }
+  .advice-container {
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 16px;
+  }
+  .cards .card:last-child {
+    grid-column: 1 / 3;
+    justify-self: center;
+    width: 100%;
+    max-width: calc((100% - 24px) / 2);
+  }
+}
+
+@media (min-width: 1440px) {
+  .background {
+    width: 1002px;
+    height: 737px;
+  }
+  header {
+    padding-inline: 144px;
+    justify-content: start;
+    margin-block: 88px 24px;
+    height: 64px;
+  }
+  .top-section {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 144px;
+  }
+  .top-section .text-content {
+    align-items: start;
+    text-align: start;
+    width: 460px;
+  }
+  .calculator {
+    width: 564px;
+    height: 440px;
+  }
+  .input-container .input-box {
+    height: 61px;
+  }
+  .description-section {
+    padding: 88px 144px;
+    align-items: center;
+    gap: 144px;
+  }
+  .description-image {
+    width: 564px;
+    height: 533px;
+  }
+  .description-section .text-content {
+    justify-content: center;
+    margin-top: 128px;
+  }
+  .description-section .title {
+    font-size: 48px;
+    line-height: 1.1;
+  }
+  .advice-section {
+    flex-direction: row;
+    gap: 32px;
+    margin-inline: 40px;
+    border-radius: 35px;
+    padding-inline: 52px 104px;
+  }
+  .advice-container {
+    flex-direction: column;
+    align-items: start;
+    gap: 48px;
+  }
 }
