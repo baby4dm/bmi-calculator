@@ -391,11 +391,12 @@ h4 {
     gap: 32px;
     margin-inline: 40px;
     border-radius: 35px;
-    padding-inline: 52px 104px;
+    padding-inline: 52px 154px;
   }
   .advice-container {
     flex-direction: column;
     align-items: start;
     gap: 48px;
   }
+  
 }
