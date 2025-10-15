@@ -192,7 +192,7 @@ h3 {
 .unit {
   color: var(--blue-500);
 }
-.result-section {
+.start-info {
   background-color: var(--blue-500);
   border-radius: 16px;
   padding: 32px;
@@ -416,7 +416,7 @@ h4 {
   header {
     padding-inline: 144px;
     justify-content: start;
-    margin-block: 96px 24px;
+    margin-block: 72px 48px;
     height: 64px;
     max-width: 1840px;
   }
@@ -439,6 +439,11 @@ h4 {
   }
   .input-container .input-box {
     height: 61px;
+  }
+  .start-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
   .description-section {
     padding: 120px 144px;
@@ -488,6 +493,7 @@ h4 {
   .limitations-section h2 {
     font-size: 48px;
     line-height: 1.1;
+    font-weight: 600;
   }
   .limitations-section :nth-child(1) {
     grid-column: 1 / span 6;
