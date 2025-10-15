@@ -352,6 +352,7 @@ h4 {
   .result-section {
     border-top-right-radius: 80px;
     border-bottom-right-radius: 80px;
+    overflow: hidden;
   }
   .description-section {
     display: flex;
