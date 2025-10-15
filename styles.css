@@ -319,6 +319,9 @@ h4 {
 .start-info.hidden {
   display: none;
 }
+.calculated-result.hidden {
+  display: none;
+}
 @media (min-width: 768px) {
   .top-section {
     padding-inline: 39px;
