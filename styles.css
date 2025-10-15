@@ -192,10 +192,13 @@ h3 {
 .unit {
   color: var(--blue-500);
 }
-.start-info {
+.result-section {
   background-color: var(--blue-500);
   border-radius: 16px;
   padding: 32px;
+}
+.start-info,
+.calculated-result {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -319,12 +322,13 @@ h4 {
 .input-container.hidden {
   display: none;
 }
-.start-info.hidden {
+.result-section .start-info.hidden {
   display: none;
 }
-.calculated-result.hidden {
+.result-section .calculated-result.hidden {
   display: none;
 }
+
 @media (min-width: 768px) {
   .top-section {
     padding-inline: 39px;

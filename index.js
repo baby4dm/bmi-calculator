@@ -86,7 +86,7 @@ function calculateBMI() {
     const heightCm = parseFloat(heightInput.value);
     const weightKg = parseFloat(weightInput.value);
 
-    if (!heightCm || !weightKg) {
+    if (isNaN(heightCm) || isNaN(weightKg) || heightCm <= 0 || weightKg <= 0) {
       showWelcome();
       return;
     }
@@ -114,15 +114,15 @@ function calculateBMI() {
   const st = parseFloat(weightStInput.value) || 0;
   const lbs = parseFloat(weightLbsInput.value) || 0;
 
-  if (!ft && !inch && !st && !lbs) {
-    showWelcome();
-    return;
-  }
-
   const totalInches = ft * 12 + inch;
   const totalPounds = st * 14 + lbs;
 
-  if (!totalInches || !totalPounds) {
+  if (
+    (ft === 0 && inch === 0) ||
+    (st === 0 && lbs === 0) ||
+    totalInches <= 0 ||
+    totalPounds <= 0
+  ) {
     showWelcome();
     return;
   }
