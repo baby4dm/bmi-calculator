@@ -430,10 +430,11 @@ h4 {
     height: 61px;
   }
   .description-section {
-    padding: 144px;
+    padding: 128px 144px;
     align-items: center;
     gap: 144px;
     max-width: 1840px;
+    margin: 0;
   }
   .description-image {
     width: 564px;
