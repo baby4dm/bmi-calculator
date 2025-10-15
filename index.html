@@ -70,11 +70,77 @@
             </div>
           </section>
         </section>
+        <section class="input-container imperial hidden">
+          <section class="group-row">
+            <section class="form-group">
+              <label for="height-ft">Height</label>
+              <div class="input-box">
+                <input
+                  type="text"
+                  name="height-ft"
+                  id="height-ft"
+                  placeholder="0"
+                />
+                <span class="unit">ft</span>
+              </div>
+            </section>
+            <section class="form-group">
+              <div class="input-box">
+                <input
+                  type="text"
+                  name="height-in"
+                  id="height-in"
+                  placeholder="0"
+                />
+                <span class="unit">in</span>
+              </div>
+            </section>
+          </section>
+
+          <section class="group-row">
+            <section class="form-group">
+              <label for="weight-st">Weight</label>
+              <div class="input-box">
+                <input
+                  type="text"
+                  name="weight-st"
+                  id="weight-st"
+                  placeholder="0"
+                />
+                <span class="unit">st</span>
+              </div>
+            </section>
+            <section class="form-group">
+              <div class="input-box">
+                <input
+                  type="text"
+                  name="weight-lbs"
+                  id="weight-lbs"
+                  placeholder="0"
+                />
+                <span class="unit">lbs</span>
+              </div>
+            </section>
+          </section>
+        </section>
+
         <section class="result-section">
-          <h3>Welcome!</h3>
-          <p>
-            Enter your height and weight and you’ll see your BMI result here
-          </p>
+          <section class="start-info hidden">
+            <h3>Welcome!</h3>
+            <p>
+              Enter your height and weight and you’ll see your BMI result here
+            </p>
+          </section>
+          <section class="calculated-result">
+            <section class="header">
+              <h3>Your BMI is...</h3>
+              <p class="result">22.0</p>
+            </section>
+            <p class="description">
+              Your BMI suggests you’re a healthy weight. Your ideal weight is
+              between <span class="bold"> 9st 6lbs - 12st 10lbs.</span>
+            </p>
+          </section>
         </section>
       </section>
     </section>

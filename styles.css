@@ -138,6 +138,18 @@ h3 {
   gap: 16px;
   width: 100%;
 }
+.input-container.imperial {
+  display: flex;
+  flex-direction: column;
+}
+.group-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 24px;
+  align-items: end;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -277,6 +289,36 @@ h4 {
   font-weight: 600;
   color: var(--blue-900);
 }
+.calculated-result {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.calculated-result .header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.calculated-result h3 {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.calculated-result .result {
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+
+.input-container.hidden {
+  display: none;
+}
+.start-info.hidden {
+  display: none;
+}
 @media (min-width: 768px) {
   .top-section {
     padding-inline: 39px;
@@ -346,8 +388,11 @@ h4 {
 }
 
 @media (min-width: 1440px) {
+  body {
+    align-items: center;
+  }
   .background {
-    width: 1002px;
+    width: 69.58vw;
     height: 737px;
   }
   header {
@@ -355,12 +400,14 @@ h4 {
     justify-content: start;
     margin-block: 88px 24px;
     height: 64px;
+    max-width: 1840px;
   }
   .top-section {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
     padding-inline: 144px;
+    max-width: 1840px;
   }
   .top-section .text-content {
     align-items: start;
@@ -369,7 +416,8 @@ h4 {
   }
   .calculator {
     width: 564px;
-    height: 440px;
+    min-height: 440px;
+    max-height: 613px;
   }
   .input-container .input-box {
     height: 61px;
@@ -378,6 +426,7 @@ h4 {
     padding: 88px 144px;
     align-items: center;
     gap: 144px;
+    max-width: 1840px;
   }
   .description-image {
     width: 564px;
@@ -397,6 +446,7 @@ h4 {
     margin-inline: 40px;
     border-radius: 35px;
     padding-inline: 52px 154px;
+    max-width: 1840px;
   }
   .advice-container {
     flex-direction: column;
@@ -408,6 +458,7 @@ h4 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 24px 32px;
+    max-width: 1840px;
   }
   .limitations-section .text-content {
     align-items: start;
@@ -435,5 +486,19 @@ h4 {
   .limitations-section .card:last-of-type {
     grid-column: 7 / span 4;
     width: 100%;
+  }
+  .calculated-result {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+  }
+  .calculated-result h3 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+  .calculated-result .result {
+    font-size: 64px;
   }
 }
